@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        .img-fluid {
+            height: 250px;
+        }
+
+        body {
+            margin-top: 70px;
+        }
+
+        .navbar {
+            background-color: lightgrey;
+            box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            color: black;
+        }
+
+        .navbar a:hover {
+            color: darkslategrey;
+            transition: 0.25s;
+        }
+
+        .jumbotron {
+            background-color: white;
+        }
+
+        footer {
+            background-color: lightgrey;
+        }
+        .badge{
+            cursor: pointer;
+        }
+        .col-3{
+            padding: 20px;
+        }
+        .col-3:hover{
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand fixed-top">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li class="navbar-brand">
+                    Narodno pozorište<span class="text-danger">Mostar</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Home.html">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Predstave.html">Predstave</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Register.html">Registracija</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Login.html">Prijava</a>
+                </li>
+              
+            </ul>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <div class="container p-0">
+        <h1>Predstave</h1>
+    </div>
+    <!-- home search -->
+    <div class="container p-0 pt-3">
+        <div class="row pt-3 pb-3">
+            <div class="forma col-6">
+                <form>
+                    <input class="form-control d-inline" type="text" style="width: 90%" placeholder="Pretraga" />
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="dropdown float-right">
+                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sortiraj
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Najpoularnije</a>
+                        <a class="dropdown-item" href="#">Najniza cijena</a>
+                        <a class="dropdown-item" href="#">Najvisa cijena</a>
+                        <a class="dropdown-item" href="#">Datum objave</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- categories -->
+    <div class="container p-0 pt-2 pb-3">
+        <div class="row p-0 m-0">
+            <a class="col-2 p-2 badge badge-primary">Drame</a>
+            <a class="col-2 p-2 badge badge-secondary">Komedije</a>
+            <a class="col-2 p-2 badge badge-success">Mjuzikli</a>
+            <a class="col-2 p-2 badge badge-info">Prikaži sve</a>
+        </div>
+    </div>
+    <hr />
+
+    <div class="container p-0">
+        <div class="row pt-3">
+            <div class="col-3">
+                <div class="view zoom overlay z-depth-2 rounded">
+                    <div class="mask">
+                        <img class="img-fluid w-100"
+                            src="https://pozoriste-slavija.co.rs/wp-content/uploads/2019/05/Plakat-Sta-cemo-sad.jpg">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h5>Šta ćemo sad</h5>
+                    <span class="text-danger">9.00 KM</span>
+                    <p class="mb-2 text-muted text-uppercase small">Komedije</p>
+                    <hr>
+                    <a style="color: white;" href="./PredstaveDetails.html" class="btn btn-primary btn-sm mr-1 mb-2"><i
+                            class="fas fa-info-circle pr-2 text-light"></i>Detalji</a>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="view zoom overlay z-depth-2 rounded">
+                    <div class="mask">
+                        <img class="img-fluid w-100"
+                            src="http://konjic.live/wp-content/uploads/2020/09/FB_IMG_1599566946420.jpg">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h5>Huzur</h5>
+                    <span class="text-danger">10.00 KM</span>
+                    <p class="mb-2 text-muted text-uppercase small">Drame</p>
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-sm mr-1 mb-2"><i
+                            class="fas fa-info-circle pr-2 text-light"></i>Detalji</button>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="view zoom overlay z-depth-2 rounded">
+                    <div class="mask">
+                        <img class="img-fluid w-100"
+                            src="data:image/jpeg;base64,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">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h5>Zaleđeno kraljevstvo</h5>
+                    <span class="text-danger">7.00 KM</span>
+                    <p class="mb-2 text-muted text-uppercase small">Mjuzikli</p>
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-sm mr-1 mb-2"><i
+                            class="fas fa-info-circle pr-2 text-light"></i>Detalji</button>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="view zoom overlay z-depth-2 rounded">
+                    <div class="mask">
+                        <img class="img-fluid w-100"
+                            src="https://www.npm.ba/images/predstave/dervis-i-smrt.jpg">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h5>Derviš i smrt</h5>
+                    <span class="text-danger">10.00 KM</span>
+                    <p class="mb-2 text-muted text-uppercase small">Drame</p>
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-sm mr-1 mb-2"><i
+                            class="fas fa-info-circle pr-2 text-light"></i>Detalji</button>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="view zoom overlay z-depth-2 rounded">
+                    <div class="mask">
+                        <img class="img-fluid w-100"
+                            src="https://www.npm.ba/images/alfabeta/npm-alfa-beta-repertoar.jpg">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h5>Alfa Beta</h5>
+                    <span class="text-danger">7.00 KM</span>
+                    <p class="mb-2 text-muted text-uppercase small">Komedije</p>
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-sm mr-1 mb-2"><i
+                            class="fas fa-info-circle pr-2 text-light"></i>Detalji</button>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="view zoom overlay z-depth-2 rounded">
+                    <div class="mask">
+                        <img class="img-fluid w-100"
+                            src="https://www.npm.ba/images/predstave/npm-prestava-to-repertoar.jpg">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h5>TO</h5>
+                    <span class="text-danger">10.00 KM</span>
+                    <p class="mb-2 text-muted text-uppercase small">Drame</p>
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-sm mr-1 mb-2"><i
+                            class="fas fa-info-circle pr-2 text-light"></i>Detalji</button>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="view zoom overlay z-depth-2 rounded">
+                    <div class="mask">
+                        <img class="img-fluid w-100"
+                            src="https://www.npm.ba/images/vijesti/2018/npm-nece-biti-smak-svijeta-repertoar.jpg">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h5>Neće biti smak svijeta</h5>
+                    <span class="text-danger">10.00 KM</span>
+                    <p class="mb-2 text-muted text-uppercase small">Komedije</p>
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-sm mr-1 mb-2"><i
+                            class="fas fa-info-circle pr-2 text-light"></i>Detalji</button>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="view zoom overlay z-depth-2 rounded">
+                    <div class="mask">
+                        <img class="img-fluid w-100"
+                            src="https://www.npm.ba/images/predstave/ajmo-na-fuka.jpg">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h5>Ajmo na fuka</h5>
+                    <span class="text-danger">10.00 KM</span>
+                    <p class="mb-2 text-muted text-uppercase small">Drame</p>
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-sm mr-1 mb-2"><i
+                            class="fas fa-info-circle pr-2 text-light"></i>Detalji</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center pt-5">
+        <button class="btn btn-danger">Vidi ostalo</button>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer text-dark mt-5">
+        <div class="footer-copyright text-center py-3">
+            <i class="fad fa-copyright" aria-hidden="true"></i> 2021 | 
+            <span><a class="text-dark" href="./About.html">O nama</a></span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

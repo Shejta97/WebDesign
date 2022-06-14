@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        .img-fluid {
+            height: 250px;
+        }
+
+        body {
+            margin-top: 70px;
+        }
+
+        .navbar {
+            background-color: lightgrey;
+            box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            color: black;
+        }
+
+        .navbar a:hover {
+            color: darkslategrey;
+            transition: 0.25s;
+        }
+
+        .jumbotron {
+            background-color: white;
+        }
+
+        footer {
+            background-color: lightgrey;
+        }
+        .badge{
+            cursor: pointer;
+        }
+        .col-3{
+            padding: 20px;
+        }
+        .col-3:hover{
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand fixed-top">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li class="navbar-brand">
+                    Narodno pozorište<span class="text-danger">Mostar</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Home.html">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Predstave.html">Predstave</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Registracija</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Prijava</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <div class="container p-0">
+        <h1>Proizvodi</h1>
+    </div>
+    <!-- home search -->
+    <div class="container p-0 pt-3">
+        <div class="row pt-3 pb-3">
+            <div class="forma col-6">
+                <form>
+                    <input class="form-control d-inline" type="text" style="width: 90%" placeholder="Pretraga" />
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="dropdown float-right">
+                    <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sortiraj
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Najpoularnije</a>
+                        <a class="dropdown-item" href="#">Najniza cijena</a>
+                        <a class="dropdown-item" href="#">Najvisa cijena</a>
+                        <a class="dropdown-item" href="#">Datum objave</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- categories -->
+    <div class="container p-0 pt-2 pb-3">
+        <div class="row p-0 m-0">
+            <a class="col-2 p-2 badge badge-primary">Drame</a>
+            <a class="col-2 p-2 badge badge-secondary">Komedije</a>
+            <a class="col-2 p-2 badge badge-success">Mjuzikli</a>
+        </div>
+    </div>
+    <hr />
+
+    <div class="container p-0">
+        <div class="row pt-3">
+
+            <div class="col-3">
+                <div class="view zoom overlay z-depth-2 rounded">
+                    <div class="mask">
+                        <img class="img-fluid w-100"
+                            src="https://cdn.shopify.com/s/files/1/0202/0250/products/E10D-13656576-front.jpg?v=1522187594">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                </div>
+               
+
+            
+
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer class="page-footer text-dark mt-5">
+        <div class="footer-copyright text-center py-3">
+            <i class="fad fa-copyright" aria-hidden="true"></i> 2021  | 
+            <span><a class="text-dark" href="./About.html">O nama</a></span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

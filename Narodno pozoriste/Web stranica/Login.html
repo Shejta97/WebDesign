@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        .img-fluid {
+            height: 250px;
+        }
+
+        body {
+            margin-top: 70px;
+        }
+
+        .navbar {
+            background-color: lightgrey;
+            box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            color: black;
+        }
+
+        .navbar a:hover {
+            color: darkslategrey;
+            transition: 0.25s;
+        }
+
+        footer {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand fixed-top">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li class="navbar-brand">
+                    Narodno pozoriste<span class="text-danger">Mostar</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Home.html">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Predstave.html">Predstave</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Register.html">Registracija</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Login.html">Prijava</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <div class="container">
+        <div class="col-5 mx-auto pt-5 p-5">
+            <h1 class="pb-5">Prijava</h1>
+            <form>
+                <div class="form-group">
+                    <label for="">Email adresa</label>
+                    <input type="email" class="form-control" placeholder="Unesite vašu email adresu">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" placeholder="Unesite vaš password">
+                </div>
+                <a href="./Home.html" class="btn btn-primary">Prijavi se</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer fixed-bottom text-dark mt-5">
+        <div class="footer-copyright text-center py-3">
+            <i class="fad fa-copyright" aria-hidden="true"></i> 2021 | 
+            <span><a class="text-dark" href="./About.html">O nama</a></span>
+        </div>
+    </footer>
+</body>
+
+</html>
