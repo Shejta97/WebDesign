@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/stil.css">
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <div id="mainContainer">
+        <div id="header">
+            <img src="https://www.fit.ba/student/css/img/logo.png" />
+        </div>
+        <!-- end of header -->
+        <div id="mainContent">
+            <div class="mainContentPart">
+               <h3 class="left">Studentski online servis</h3>
+               <p class="right">Unesite broj dosijea i lozinku za prijavu na sistem.<br><br><br>
+               U slučaju problema sa prijavom molimo kontaktirajte <a href="mailto:dlwms.podrska@fit.ba">tehničku podršku</a>.</p>
+            </div>
+            <div class="mainContentPart">
+                <form method="GET" class="left2">
+                    <label for="BrojdosijeaTxt">Broj dosijea</label><br>
+                    <input type="text" name="Brojdosijea" id="BrojdosijeaTxt" style=" width:100%; height:30px; text-indent:6px;border-radius:7px; border:1px solid gray;background-color:white;"><br><br>
+                    <label for="passTxt">Lozinka</label><br>
+                    <input type="password" name="password" id="passTxt" style="width:100%;height:30px; text-indent:6px;border-radius:7px;border:1px solid gray;background-color:white;">
+                    <br><br>
+
+                    <label for="studij">Studij</label><br>
+                    <select name="studij" style="width:100%; height:30px;border-radius:7px;border:1px solid gray;background-color:white;">
+                        <option value="Fakultet informacijskih tehnologija">Fakultet informacijskih tehnologija</option>
+                        <option value="FIT-postdiplomski studij">FIT-postdiplomski studij</option>
+                        <option value="FHN">FHN</option>
+                        <option value="DEMO">DEMO</option>
+                        <option value="Poslovna informatika">Poslovna informatika</option>
+                    </select>
+                    <br><br>
+                    <input type="checkbox" name="Zapamti me" id="zapamti me" value="zapamti me" style="cursor:pointer">
+                    <label for="zapamti me">Zapamti me</label>
+                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                    <input type="submit"  value="Prijava" style="width:100px;height:25px;cursor:pointer;background-color:white;border-radius:10px;border:1px solid black;">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <a href="lozinka.aspx">Zaboravio/la sam lozinku</a>
+                </form>
+            </div>
+        </div>
+        <!-- end of mainContent -->
+        <div id="footer">
+        <br>
+        <h5 style="text-align:center;color:white;font-family:verdana;margin-top:1px;">FIT DLWMS</h5>
+        <hr style="margin-top:1px;width:95%;" noshade>
+        <p style="font-size:14px;text-align:center;color:white;font-family:arial;margin-top:1px;width:auto;">Copyright © 2011-2012, Fakultet informacijskih tehnologija ukoliko nije drugačije označeno. Sva prava pridržana.</p>
+        </div>
+    </div>
+    <!-- end of mainCointainer -->
+
+    </form>
+</body>
+
+</html>
